@@ -1,0 +1,396 @@
+/* Сброс стандартных стилей браузера */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Roboto", sans-serif;
+ 
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+  /* Убираем маркеры у списка */
+}
+
+
+h1,h2,h3,h4,h5,h6, p {
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Плавный скролл по якорям */
+}
+
+.container {
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*================ HEADER ================*/
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+}
+
+.header-container{
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  }
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.button-header{
+  display: block;
+  align-items: center;
+  color: #1e0e62;
+  border-radius: 50px;
+  font-size: 16px;
+  background-color: #fff;
+  border: 2px solid #e6e6e6;   
+  transition: background-color 0.3s;
+  padding: 9px 30px;
+}
+
+.button-header:hover {
+  background-color: #e1e1e1ab;
+}
+
+.logo {
+  padding-left: 16px;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+  color: #1e0e62;
+}
+
+.header-nav{
+display: flex;
+}
+
+@media screen and (min-width: 768px){
+  .header-nav {
+      gap: 483px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+.header-nav {
+    gap: 843px;
+  }
+.logo {
+    font-size: 24px;
+  }
+}
+
+/*================ HEADER ================*/
+
+/*================ HERO ================*/
+
+.hero {
+  background: #f1f1f1;
+}
+
+.hero-container{
+
+justify-content: space-between;
+
+}
+
+
+.hero-title {
+  padding-top: 99px;
+  max-width: 422px;
+  
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.39535;
+    color: #1e0e62;
+   padding-bottom: 40px;
+  }
+
+.hero-text {
+  max-width: 359px;
+  font-weight: 400;
+    font-size: 17px;
+    line-height: 1.18182;
+    color: rgba(21, 20, 57, 0.4);
+}
+
+.hero-image {
+  padding-top: 53px;
+}
+
+@media screen and (min-width: 768px) {
+.hero-container {
+    display: flex;
+  }
+
+  .hero-title {
+    max-width: 320px;
+    font-size: 24px;
+  margin: 0;
+    }
+
+.hero-text {
+  max-width: 319px;
+ margin: 0; 
+ font-size: 19px;
+}
+
+.hero-image {
+  padding-top: 55px;
+
+}
+
+}
+
+
+@media screen and (min-width: 1158px) {
+  .hero-container {
+    display: flex;
+  }
+.hero-title {
+  max-width: 422px;
+  padding-top: 109px;
+  font-size: 43px;
+}
+
+.hero-text {
+  max-width: 369px;
+  margin: 0;
+  font-size: 22px;
+}
+
+.hero-image {
+  padding-top: 53px;
+  width: 570px;
+  height: 451px;
+}
+
+}
+/*================ HERO ================*/
+
+/*================ MIS ================*/
+
+.section-info {
+  background: #f1f1f1;
+}
+
+.container {}
+
+.mis-title {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2381;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #1e0e62;
+}
+
+.mis-text {
+  padding-bottom: 95px;
+  width: 793px;
+  font-weight: 500;
+    font-size: 22px;
+    line-height: 1.45455;
+    text-align: center;
+    color: rgba(21, 20, 57, 0.4);
+}
+
+.mis-list {
+  padding-left: 90px;
+  display: flex;
+ align-items: center;
+  gap: 80px;
+  padding-bottom: 142px;
+}
+
+.mis-item {}
+
+.section-mis-info {
+  font-weight: 500;
+    font-size: 18px;
+    line-height: 1.55556;
+    text-align: center;
+    color: #1e0e62;
+}
+
+.section-mis-title {
+  width: 266px;
+  font-weight: 400;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    color: rgba(21, 20, 57, 0.4);
+}
+
+/*================ MIS ================*/
+
+
+/*================ EXPERIENC ================*/
+
+.experienc {
+  background: #fff;
+}
+
+.container {}
+
+.experienc-title {
+  padding-top: 100px;
+  font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2381;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #1e0e62;
+    padding-bottom: 20px;
+}
+
+.experienc-subtitle {
+    width: 758px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.45455;
+    text-align: center;
+    color: rgba(21, 20, 57, 0.4);
+}
+
+.container-experienc-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experienc-btn {
+    margin-top: 55px;
+    margin-bottom: 79px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.44444;
+    text-align: center;
+    color: #fff;
+    background: #25dac5;
+    border-radius: 100px;
+    border: none;
+    padding: 12px 20px;
+}
+
+.experienc-item {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experienc-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.experienc-image {
+  border-radius: 8px;
+}
+
+.experienc-subtitle-card {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #1e0e62;
+  margin-top: 20px;
+}
+
+.experienc-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgba(21, 20, 57, 0.4);
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 1158px) {
+  .experienc-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-bottom: 122px;
+}
+  
+}
+
+
+@media screen and (max-width: 1158px) and (min-width: 768px) {
+  .experienc-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .experienc-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+/*================ EXPERIENC ================*/

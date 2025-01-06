@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
@@ -32,30 +32,172 @@
       <section class="hero">
         <div class="container hero-container">
           <div class="hero-info">
-          <h1 class="hero-title">Hola, soy Mauri. FullStack Developer</h1>
-          <p class="hero-text">
-            Pon aquí una breve introducción sobre ti, a que te dedicas, tu
-            experiencia y cualquier hito importante en tu carrera o estudios.
-          </p>
+            <h1 class="hero-title">Hola, soy Mauri. FullStack Developer</h1>
+            <p class="hero-text">
+              Pon aquí una breve introducción sobre ti, a que te dedicas, tu
+              experiencia y cualquier hito importante en tu carrera o estudios.
+            </p>
           </div>
-          <source
-              srcset="/image/Mask-mobile-1x-min.png 1x, 
-              /image/Mask-mobile-2x-min.png 2x"
-              media="(min-width: 768px)" />
-           <source
-              srcset="/image/Video Player-min.png 1x, 
-              /image/Video Player-2x-min.png 2x"
-              media="(max-width: 1280px)" />
-            <img
-              class="hero-image"
-              src="/image/Video Player-min.png"
-              alt="dog"
+          <picture>
+            <source
+              srcset="
+                /image/Mask-mobile-1x-min.png 1x,
+                /image/Mask-mobile-2x-min.png 2x
+              "
+              width="359"
+              height="236"
+              media="(min-width: 768px)"
             />
+            <source
+              srcset="/image/Player-1x.jpg 1x, /image/Player-2x.jpg 2x"
+              width="570"
+              height="451"
+              media="(max-width: 1280px)"
+            />
+            <img class="hero-image" src="/image/Player-1x.jpg" alt="dog" />
           </picture>
         </div>
       </section>
+      <section class="section-info">
+        <div class="container">
+          <h2 class="mis-title">Mis habilidades</h2>
+          <p class="mis-text">
+            Cuenta tus principales conocimientos y habilidades. Si lo necesitas
+            puedes agregar otra ínea de 3 cajas de texto debajo.
+          </p>
+          <div>
+            <ul class="mis-list">
+              <li class="mis-item">
+                <h3 class="section-mis-info">ReactJs</h3>
+                <p class="section-mis-title">
+                  Creacón de aplicaciones web y móviles multiplataforma con
+                  React y React Native
+                </p>
+              </li>
+              <li class="mis-item">
+                <h3 class="section-mis-info">PHP, SQL y Laravel</h3>
+                <p class="section-mis-title">
+                  15 año de experiencia en el desarrollo backend con tecnologías
+                  OpenSource
+                </p>
+              </li>
+              <li class="mis-item">
+                <h3 class="section-mis-info">SEO</h3>
+                <p class="section-mis-title">
+                  10 años de experiencia en optimización de sitios web y
+                  posicionamiento en buscadores
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="experienc">
+        <div class="container">
+          <h2 class="experienc-title">Mi experiencia</h2>
+          <p class="experienc-subtitle">
+            Experiencia de anteriores empleos o trabajos experimentales que
+            hayas realizado para aprender (como este). O inventate algo
+          </p>
+          <div class="container-experienc-btn">
+            <button class="experienc-btn" type="button">
+              GitHub o Contacto
+            </button>
+          </div>
+
+          <ul class="experienc-list">
+            <li class="experienc-item">
+              <div class="card">
+                <img
+                  class="experienc-image"
+                  srcset="/image/photo-1-2x.jpg 2x"
+                  src="/image/photo-1-1x.jpg     1x"
+                  alt="image1"
+                />
+                <h3 class="experienc-subtitle-card">Trabajo real #1</h3>
+                <p class="experienc-text">
+                  Describe el proyecto y si puedes añade un enlace con más info,
+                  GitHub, sitio web, etc.
+                </p>
+              </div>
+            </li>
+            <li class="experienc-item">
+              <div class="card">
+                <img
+                  class="experienc-image"
+                  src="/image/photo-2-1x.jpg     1x"
+                  srcset="/image/photo-2-2x.jpg 2x"
+                  alt="image2"
+                />
+                <h3 class="experienc-subtitle-card">Trabajo experimental #1</h3>
+                <p class="experienc-text">
+                  Describe el proyecto y si puedes añade un enlace con más info,
+                  GitHub, sitio web, etc.
+                </p>
+              </div>
+            </li>
+            <li class="experienc-item">
+              <div class="card">
+                <img
+                  src="/image/photo-3-1x.jpg  1x"
+                  srcset="/image/photo-3-2x.jpg 2x"
+                  alt="image3"
+                />
+                <h3 class="experienc-subtitle-card">Trabajo real #2</h3>
+                <p class="experienc-text">
+                  Describe el proyecto y si puedes añade un enlace con más info,
+                  GitHub, sitio web, etc.
+                </p>
+              </div>
+            </li>
+            <li class="experienc-item">
+              <div class="card">
+                <img
+                  class="experienc-image"
+                  src="/image/photo-4-1x.jpg      1x"
+                  srcset="/image/photo-4-2x.jpg 2x"
+                  alt="image4"
+                />
+                <h3 class="experienc-subtitle-card">Trabajo experimental #2</h3>
+                <p class="experienc-text">
+                  Describe el proyecto y si puedes añade un enlace con más info,
+                  GitHub, sitio web, etc.
+                </p>
+              </div>
+            </li>
+            <li class="experienc-item">
+              <div class="card">
+                <img
+                  class="experienc-image"
+                  src="/image/photo-5-1x.jpg      1x"
+                  srcset="/image/photo-5-2x.jpg 2x"
+                  alt="image5"
+                />
+                <h3 class="experienc-subtitle-card">Me invento este trabajo</h3>
+                <p class="experienc-text">
+                  Describe el proyecto y si puedes añade un enlace con más info,
+                  GitHub, sitio web, etc.
+                </p>
+              </div>
+            </li>
+            <li class="experienc-item">
+              <div class="card">
+                <img
+                  class="experienc-image"
+                  src="/image/photo-6-1x.jpg      1x"
+                  srcset="/image/photo-6-2x.jpg 2x"
+                  alt="image6"
+                />
+                <h3 class="experienc-subtitle-card">Porque puedo</h3>
+                <p class="experienc-text">
+                  Describe el proyecto y si puedes añade un enlace con más info,
+                  GitHub, sitio web, etc.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
