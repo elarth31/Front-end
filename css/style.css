@@ -197,11 +197,12 @@ justify-content: space-between;
 
 
 @media screen and (min-width: 1158px) {
-  .hero-container {
-    display: flex;
-  }
+.hero-container {
+  display: flex;
+}
+
 .hero-title {
-  max-width: 422px;
+  min-width: 422px;
   padding-top: 109px;
   font-size: 43px;
 }
@@ -394,3 +395,64 @@ justify-content: space-between;
 }
 
 /*================ EXPERIENC ================*/
+.footer{
+background: #f1f1f1;
+  display: flex;
+  /* Flexbox для вертикального расположения */
+  flex-direction: column;
+  /* Размещаем элементы по вертикали */
+  align-items: center;
+  /* Центрируем все элементы по горизонтали */
+  justify-content: center;
+  /* Центрируем все элементы по вертикали */
+
+  /* Добавляем отступы сверху и снизу */
+
+}
+
+.footer-title {
+  padding-top: 194px;
+  font-weight: 700;
+    font-size: 58px;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #1e0e62;
+  padding-bottom: 20px;
+}
+
+.footer-info {
+  font-weight: 700;
+    font-size: 58px;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #482be7;
+ display: block;
+padding-bottom: 134px;
+ 
+  
+}
+
+
+.pictire{
+fill: #9999a7;
+}
+
+.icons-list{
+  display: flex;
+    align-items: center;
+    gap: 58px;
+    justify-content: center;
+padding-bottom: 55px;
+}
+
+.social-network-link{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    
+   
+}
