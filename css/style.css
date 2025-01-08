@@ -1,14 +1,11 @@
-/* Сброс стандартных стилей браузера */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-
 body {
   font-family: "Roboto", sans-serif;
- 
 }
 
 a {
@@ -21,9 +18,7 @@ ol {
   list-style-type: none;
     margin: 0;
     padding: 0;
-  /* Убираем маркеры у списка */
 }
-
 
 h1,h2,h3,h4,h5,h6, p {
   margin: 0 auto;
@@ -40,7 +35,6 @@ button {
 
 html {
   scroll-behavior: smooth;
-  /* Плавный скролл по якорям */
 }
 
 .container {
@@ -142,29 +136,25 @@ display: flex;
 }
 
 .hero-container{
-
 justify-content: space-between;
-
 }
-
 
 .hero-title {
   padding-top: 99px;
   max-width: 422px;
-  
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 1.39535;
-    color: #1e0e62;
-   padding-bottom: 40px;
-  }
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.39535;
+  color: #1e0e62;
+  padding-bottom: 40px;
+}
 
 .hero-text {
   max-width: 359px;
   font-weight: 400;
-    font-size: 17px;
-    line-height: 1.18182;
-    color: rgba(21, 20, 57, 0.4);
+  font-size: 17px;
+  line-height: 1.18182;
+  color: rgba(21, 20, 57, 0.4);
 }
 
 .hero-image {
@@ -173,28 +163,25 @@ justify-content: space-between;
 
 @media screen and (min-width: 768px) {
 .hero-container {
-    display: flex;
-  }
+  display: flex;
+}
 
-  .hero-title {
-    max-width: 320px;
-    font-size: 24px;
+.hero-title {
+  max-width: 320px;
+  font-size: 24px;
   margin: 0;
-    }
+}
 
 .hero-text {
   max-width: 319px;
- margin: 0; 
- font-size: 19px;
+  margin: 0; 
+  font-size: 19px;
 }
 
 .hero-image {
   padding-top: 55px;
-
 }
-
 }
-
 
 @media screen and (min-width: 1158px) {
 .hero-container {
@@ -218,7 +205,6 @@ justify-content: space-between;
   width: 570px;
   height: 451px;
 }
-
 }
 /*================ HERO ================*/
 
@@ -228,54 +214,97 @@ justify-content: space-between;
   background: #f1f1f1;
 }
 
-.container {}
-
 .mis-title {
-  padding-top: 100px;
+  padding-top: 99px;
   padding-bottom: 40px;
-  font-weight: 700;
-    font-size: 42px;
-    line-height: 1.2381;
-    letter-spacing: -0.01em;
-    text-align: center;
-    color: #1e0e62;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2381;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #1e0e62;
 }
 
 .mis-text {
   padding-bottom: 95px;
-  width: 793px;
+  width: 293px;
   font-weight: 500;
-    font-size: 22px;
-    line-height: 1.45455;
-    text-align: center;
-    color: rgba(21, 20, 57, 0.4);
+  font-size: 22px;
+  line-height: 1.45455;
+  color: rgba(21, 20, 57, 0.4);
 }
 
 .mis-list {
-  padding-left: 90px;
-  display: flex;
- align-items: center;
-  gap: 80px;
-  padding-bottom: 142px;
+  padding-bottom: 99px;
 }
-
-.mis-item {}
 
 .section-mis-info {
   font-weight: 500;
-    font-size: 18px;
-    line-height: 1.55556;
-    text-align: center;
-    color: #1e0e62;
+  font-size: 18px;
+  line-height: 1.55556;
+  text-align: center;
+  color: #1e0e62;
+  padding-bottom: 10px;
 }
 
 .section-mis-title {
   width: 266px;
   font-weight: 400;
-    font-size: 16px;
-    line-height: 1.625;
-    text-align: center;
-    color: rgba(21, 20, 57, 0.4);
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: rgba(21, 20, 57, 0.4);
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px){
+.mis-title {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.mis-text {
+  text-align: center;
+  width: 525px;
+}
+
+.mis-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-mis-info {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+
+.section-mis-title {
+  width: 226px;
+}
+}
+
+@media screen and (min-width: 1158px){
+.mis-title {
+  font-size: 42px;
+}
+
+.mis-text {
+  width: 793px;
+}
+
+.mis-list {
+  padding-left: 90px;     
+  gap: 80px;
+  padding-bottom: 142px;
+}
+
+.section-mis-title {
+   width: 266px;
+}
 }
 
 /*================ MIS ================*/
@@ -287,17 +316,15 @@ justify-content: space-between;
   background: #fff;
 }
 
-.container {}
-
 .experienc-title {
   padding-top: 100px;
   font-weight: 700;
-    font-size: 42px;
-    line-height: 1.2381;
-    letter-spacing: -0.01em;
-    text-align: center;
-    color: #1e0e62;
-    padding-bottom: 20px;
+  font-size: 42px;
+  line-height: 1.2381;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #1e0e62;
+  padding-bottom: 20px;
 }
 
 .experienc-subtitle {
@@ -339,7 +366,7 @@ justify-content: space-between;
   justify-content: space-between;
   max-width: 300px;
   margin: 0 auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .experienc-item:hover {
@@ -368,91 +395,134 @@ justify-content: space-between;
 }
 
 @media screen and (min-width: 1158px) {
-  .experienc-list {
+.experienc-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding-bottom: 122px;
 }
-  
 }
 
-
 @media screen and (max-width: 1158px) and (min-width: 768px) {
-  .experienc-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-  }
+.experienc-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.experienc-title {
+  padding-top: 99px;
+  font-size: 32px;
+}
+
+.experienc-subtitle {
+  width: 558px;
+}
+.experienc-list {
+  padding-bottom: 99px;
+}
 }
 
 @media screen and (max-width: 768px) {
-  .experienc-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
+.experienc-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.experienc-title {
+  padding-top: 80px;
+}
+  
+.experienc-subtitle {
+  width: 298px;
+}
+
+.experienc-list{
+  padding-bottom: 99px;
+}
 }
 
 /*================ EXPERIENC ================*/
 .footer{
-background: #f1f1f1;
+  background: #f1f1f1;
   display: flex;
-  /* Flexbox для вертикального расположения */
   flex-direction: column;
-  /* Размещаем элементы по вертикали */
   align-items: center;
-  /* Центрируем все элементы по горизонтали */
   justify-content: center;
-  /* Центрируем все элементы по вертикали */
-
-  /* Добавляем отступы сверху и снизу */
-
 }
 
 .footer-title {
-  padding-top: 194px;
+  padding-top: 94px;
   font-weight: 700;
-    font-size: 58px;
-    line-height: 1.21;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: #1e0e62;
+  font-size: 38px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #1e0e62;
   padding-bottom: 20px;
 }
 
 .footer-info {
   font-weight: 700;
-    font-size: 58px;
-    line-height: 1.21;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: #482be7;
- display: block;
-padding-bottom: 134px;
- 
-  
+  font-size: 38px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #482be7;
+  display: block;
+  padding-bottom: 134px;
 }
 
-
 .pictire{
-fill: #9999a7;
+  fill: #9999a7;
 }
 
 .icons-list{
   display: flex;
-    align-items: center;
-    gap: 58px;
-    justify-content: center;
-padding-bottom: 55px;
+  align-items: center;
+  gap: 38px;
+  justify-content: center;
+  padding-bottom: 55px;
 }
 
 .social-network-link{
   display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    
-   
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (min-width: 768px) {
+.footer-title {
+  padding-top: 134px;
+  font-size: 38px;
+  padding-bottom: 20px;
+}
+
+.footer-info {
+  font-size: 38px;
+  padding-bottom: 139px;
+}
+
+.icons-list{
+  gap: 40px;
+}
+}
+
+@media screen and (min-width: 1158px) {
+.footer-title {
+  padding-top: 194px;
+  font-size: 58px;
+}
+  
+.footer-info {
+  font-size: 58px;
+  padding-bottom: 144px;
+}
+
+.icons-list {
+  gap: 58px;
+}
 }
